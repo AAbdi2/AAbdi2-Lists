@@ -31,9 +31,8 @@ public class ListExercise {
      * @return a List<Integer> object.
      */
 
-     List<Integer> list = new ArrayList<Integer>();
-
     public List<Integer> createList(){
+        ArrayList<Integer> list = new ArrayList<Integer>();
         return list;
     }
 
@@ -72,9 +71,7 @@ public class ListExercise {
      * @return the int at the location in 'list' represented by 'index'.
      */
     public int get(List<Integer> list, int index){
-        
         return list.get(index);
-
     }
 
     /**
@@ -87,9 +84,7 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void removeFromList(List<Integer> list, int position){
-
         list.remove(position);
-
     }
 
     /**
@@ -102,8 +97,6 @@ public class ListExercise {
      * @return nothing, pass by reference will cause changes to the list object to be reflected across the program.
      */
     public void updateAtPosition(List<Integer> list, int position, int value){
-
         list.set(position,value);
-
     }
 }
